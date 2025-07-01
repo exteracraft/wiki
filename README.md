@@ -48,29 +48,12 @@ npm run docs:dev
 
 [![Участники](https://contrib.rocks/image?repo=exteracraft/wiki)](https://github.com/exteracraft/wiki/graphs/contributors)
 
-
-## Активность проекта ALT Gnome Wiki
-
-![Статистика активности](https://repobeats.axiom.co/api/embed/4637fb51923408d570b8e555b3fde24eedb2bfea.svg 'Repobeats analytics image')
-
-## Как помочь проекту ALT Gnome Wiki
+## Как помочь exteraCraft Wiki
 
 Вы можете поддержать проект несколькими способами:
 
 - Создать задачу с проблемой или предложением по улучшению (Issue);
 - Создать запрос на слияние с добавлением/исправлением статьи или функционала;
-- Поддержать конкретного автора: все ссылки размещены на странице [Участники](https://alt-gnome.wiki/contributions.html);
-- Поддержать весь проект рублём на [Boosty](http://boosty.to/alt_gnome).
-
-## Благодарность
-
-Спасибо [команде разработки Nólëbase](https://github.com/nolebase) за создание и поддержку набора плагинов [Nólëbase Integrations](https://github.com/nolebase/integrations) и активное взаимодействие.
-
-## Лицензия
-
-[MIT](https://github.com/OlegShchavelev/ALTRegularGnomeWiki/blob/main/LICENSE)
-
-Copyright © 2023-present <OLEG SHCHAVELEV>
 
 # Licences
 
