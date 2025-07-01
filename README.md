@@ -42,12 +42,6 @@ npm i
 npm run docs:dev
 ```
 
-## Участники проекта exteraCraft Wiki
-
-Список людей внесших вклад в проект:
-
-[![Участники](https://contrib.rocks/image?repo=exteracraft/wiki)](https://github.com/exteracraft/wiki/graphs/contributors)
-
 ## Как помочь exteraCraft Wiki
 
 Вы можете поддержать проект несколькими способами:
