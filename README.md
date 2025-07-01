@@ -65,7 +65,7 @@ npm run docs:dev
 </details>
 
 <details>
-<summary><img src="https://img.shields.io/badge/licence-CC_3.0_BY--SA-lightblue?style=for-the-badge" alt="Creative Commons 3.0 BY-SA"></summary>
+<summary><img src="https://img.shields.io/badge/licence-CC_4.0_BY--NC--SA-lightblue?style=for-the-badge" alt="Creative Commons 3.0 BY-NC-SA"></summary>
 
 >All other non-code exteraCraft Assets, including icons and sound files, are licensed under the [Creative Commons 4.0 BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license unless otherwise noted in the folder or file.
 </details>
