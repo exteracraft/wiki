@@ -1,0 +1,66 @@
+# Пример рабочего процесса для создания и развёртывания сайта VitePress на GitHub Pages
+#
+name: 🏗️ Deploy VitePress site to Pages
+
+on:
+  # Выполняется при пушах, направленных в ветку `main`. Измените это значение на `master`, если вы
+  # используете ветку `master` в качестве ветки по умолчанию.
+  push:
+    branches: [main]
+
+  # Позволяет запустить этот рабочий процесс вручную на вкладке «Actions».
+  workflow_dispatch:
+
+# Устанавливает разрешения GITHUB_TOKEN, чтобы разрешить развёртывание на страницах GitHub.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Разрешите только одно одновременное развёртывание, пропуская запуски, стоящие в очереди.
+# Однако НЕ отменяйте текущие запуски, поскольку мы хотим дать возможность завершить производственные развёртывания.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # Сборка
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Не требуется, если функция lastUpdated не включена
+      # - uses: pnpm/action-setup@v3 # Раскомментируйте, если вы используете pnpm
+      #   with:
+      #     version: 9
+      # - uses: oven-sh/setup-bun@v1 # Раскомментируйте, если вы используете Bun
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm # или pnpm / yarn
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Install dependencies
+        run: npm ci # или pnpm install / yarn install / bun install
+      - name: Build with VitePress
+        run: npm run docs:build # или pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+  # Развёртывание
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
