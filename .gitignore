@@ -1,3 +1,20 @@
-# Ignore VitePress shit
-docs/.vitepress/cache
-docs/.vitepress/dist
+# Ignore vitepress shit
+vitepress/.vitepress/cache
+vitepress/.vitepress/dist
+node_modules
+vitepress/.vitepress/.temp
+
+# Obsidian
+.obsidian/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+GitHub.sublime-settings
+
+# VsCode
+.vscode/
+.history/
+
+# JBrains
+.idea/
