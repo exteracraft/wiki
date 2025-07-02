@@ -4,7 +4,7 @@ layout: home
 
 hero:
   image:
-    src: src/cube.png
+    public: cube.png
     alt: logo
   name: "exteraCraft"
   text: "играй по красному"

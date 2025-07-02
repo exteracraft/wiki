@@ -15,6 +15,9 @@ export default defineConfig({
   title: "exteraCraft",
   description: "exteraCraft - играй по красному",
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Главная', link: '/' },
@@ -36,7 +39,7 @@ export default defineConfig({
   },
     head: [
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' }],
-    ['link', { rel: 'icon', href: '/src/cube.png' }]
+    ['link', { rel: 'icon', href: 'cube.png' }]
     ],
   vite: {
     resolve: {

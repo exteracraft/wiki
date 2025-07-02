@@ -12,28 +12,28 @@ title: "Голосовой чат"
 
 Нажмите на клавишу `V` (английскую) по умолчанию, чтобы открыть меню мода
 
-![](src/mods/voice/mic.png)
+![](public/mods/voice/mic.png)
 
 Выберите микрофон, а затем нажмите на иконку рядом с `Порог активации`. Если полоска становится зеленой, значит микрофон работает
 
-![](src/mods/voice/test.webp)
+![](public/mods/voice/test.webp)
 
 Выйдите из меню и нажмите на `Левый альт`, чтобы говорить. Изменить кнопку можно в вкладке `Клавиши`
 
-![](src/mods/voice/keys.png)
+![](public/mods/voice/keys.png)
 
 Зайдите в социальное меню Minecraft, чтобы заглушать и изменить громкость игроков. Кнопка `P` по умолчанию
 
-![](src/mods/voice/social.png)
+![](public/mods/voice/social.png)
 
 Зажмите `ПКМ` и крутите колёсико мыши, чтобы изменять громкость не заходя в меню
 
-![](src/mods/voice/scroll.webp)
+![](public/mods/voice/scroll.webp)
 
 ## Значение HUD иконок
 
-![](src/mods/voice/hud_icons.png)
+![](public/mods/voice/hud_icons.png)
 
 ## Значение иконок над игроками
 
-![](src/mods/voice/player_icons.png)
+![](public/mods/voice/player_icons.png)
