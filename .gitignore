@@ -1,5 +1,6 @@
 # Ignore vitepress shit
 vitepress/.vitepress/cache
+.vitepress/cache/*
 vitepress/.vitepress/dist
 node_modules
 vitepress/.vitepress/.temp
@@ -18,3 +19,5 @@ GitHub.sublime-settings
 
 # JBrains
 .idea/
+
+node_modules/.package-lock.json
