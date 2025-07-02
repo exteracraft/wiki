@@ -73,7 +73,7 @@ npm run docs:dev
 <details>
 <summary><img src="https://img.shields.io/badge/licence-CLA-orange?style=for-the-badge" alt="CLA"></summary>
 
->All code as well as exteraCraft assemblies are protected under the [CLA](https://github.com/exteracraft/wiki/blob/main/CLA.txt) license.
+>All code as well as exteraCraft assemblies are protected under the [CLA](https://github.com/exteracraft/wiki/blob/main/cla.txt) license.
 </details>
 
 
