@@ -15,7 +15,7 @@ export default defineConfig({
   title: "exteraCraft",
   description: "exteraCraft - играй по красному",
   themeConfig: {
-    logo: '/logo.png',
+    logo: 'logo.png',
     search: {
       provider: 'local'
     },
@@ -37,7 +37,7 @@ export default defineConfig({
   },
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' }],
-    ['link', { rel: 'icon', href: '/cube.png' }]
+    ['link', { rel: 'icon', href: 'cube.png' }]
   ],
   vite: {
     resolve: {
