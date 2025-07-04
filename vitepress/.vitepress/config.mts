@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/wiki/',
   markdown: {
@@ -16,15 +15,14 @@ export default defineConfig({
   title: "exteraCraft",
   description: "exteraCraft - играй по красному",
   themeConfig: {
+    logo: '/logo.png',
     search: {
       provider: 'local'
     },
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Главная', link: '/' },
       { text: 'Wiki', link: '/main' },
     ],
-
     sidebar: [
       {
         text: 'Основное',
@@ -36,12 +34,11 @@ export default defineConfig({
         ]
       }
     ],
-
   },
-    head: [
+  head: [
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' }],
-    ['link', { rel: 'icon', href: 'cube.png' }]
-    ],
+    ['link', { rel: 'icon', href: '/cube.png' }]
+  ],
   vite: {
     resolve: {
       alias: {

@@ -1,10 +1,37 @@
 {
+  "description": "exteraCraft играй по красному",
+  "homepage": "exteracraft.github.io/wiki/",
+  "license": "CLA",
+  "bugs": {
+    "url": "https://github.com/exteracraft/wiki"
+  },
+  "keywords": [
+    "minecraft",
+    "exteracraft",
+    "extracraft",
+    "exteragram",
+    "extragram",
+    "vitepress",
+    "smp",
+    "extera smp",
+    "extra smp",
+    "mc.exteragram.app",
+    "OpenSuse",
+    "Simple Voice Chat",
+    "Emotecraft",
+    "exteracraft wiki",
+    "wiki"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exteracraft/wiki"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
   "scripts": {
     "docs:dev": "vitepress dev vitepress",
     "docs:build": "vitepress build vitepress",
     "docs:preview": "vitepress preview vitepress"
-  },
-  "dependencies": {
-    "vitepress": "^1.6.3"
   }
 }
