@@ -65,6 +65,9 @@ export default defineConfig({
           { text: 'Начать играть', link: '/start' },
           { text: 'Правила', link: '/rule' },
           { text: 'Моды', link: '/mods' },
+          { text: 'Зеленая зона', link: '/green-zone' },
+          { text: 'Адские ветки', link: '/highway' },
+          { text: 'Банк', link: '/bank' },
         ]
       },
     ],
@@ -92,5 +95,6 @@ export default defineConfig({
         '@components': '/docs/.vitepress/components'
       }
     }
-  }
+  },
+  cleanUrls: true
 });
