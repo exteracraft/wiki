@@ -63,6 +63,7 @@ export default defineConfig({
         items: [
           { text: 'Главная', link: '/main' },
           { text: 'Начать играть', link: '/start' },
+          { text: 'Авторизация', link: '/auth' },
           { text: 'Правила', link: '/rule' },
           { text: 'Моды', link: '/mods' },
           { text: 'Зеленая зона', link: '/green-zone' },
