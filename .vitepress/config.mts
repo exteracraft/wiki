@@ -79,7 +79,7 @@ export default defineConfig({
         href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css',
       },
     ],
-    ['link', { rel: 'icon', href: '/cube.png' }],
+    ['link', { rel: 'icon', href: 'cube.png' }],
   ],
   cleanUrls: true,
 });
