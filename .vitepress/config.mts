@@ -1,28 +1,30 @@
 import { defineConfig } from 'vitepress';
+import { nav, sidebar } from './navigations';
 
 export default defineConfig({
   base: '/wiki/',
+  srcDir: './docs',
   markdown: {
     container: {
       tipLabel: 'Подсказка',
       warningLabel: 'Внимание',
       dangerLabel: 'Осторожно',
       infoLabel: 'Информация',
-      detailsLabel: 'Подробнее'
-    }
+      detailsLabel: 'Подробнее',
+    },
   },
   lang: 'ru-RU',
-  title: "exteraCraft",
-  description: "exteraCraft - играй по красному",
+  title: 'exteraCraft',
+  description: 'exteraCraft - играй по красному',
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/exteracraft/wiki/edit/main/vitepress/:path',
-      text: 'Предложить изменения на этой странице'
+      pattern: 'https://github.com/exteracraft/wiki/edit/main/docs/:path',
+      text: 'Предложить изменения на этой странице',
     },
     lastUpdated: {
-      text: 'Последнее обновление'
+      text: 'Последнее обновление',
     },
-    logo: 'logo.png',
+    logo: '/logo.png',
     search: {
       provider: 'local',
       options: {
@@ -31,7 +33,7 @@ export default defineConfig({
             translations: {
               button: {
                 buttonText: 'Поиск',
-                buttonAriaLabel: 'Поиск'
+                buttonAriaLabel: 'Поиск',
               },
               modal: {
                 displayDetails: 'Отобразить подробный список',
@@ -45,35 +47,19 @@ export default defineConfig({
                   navigateUpKeyAriaLabel: 'стрелка вверх',
                   navigateDownKeyAriaLabel: 'стрелка вниз',
                   closeText: 'закрыть',
-                  closeKeyAriaLabel: 'esc'
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    nav: [
-      { text: 'Главная', link: '/' },
-      { text: 'Wiki', link: '/main' },
-    ],
-    sidebar: [
-      {
-        text: 'Основное',
-        items: [
-          { text: 'Главная', link: '/main' },
-          { text: 'Начать играть', link: '/start' },
-          { text: 'Правила', link: '/rule' },
-          { text: 'Моды', link: '/mods' },
-          { text: 'Зеленая зона', link: '/green-zone' },
-          { text: 'Адские ветки', link: '/highway' },
-          { text: 'Банк', link: '/bank' },
-        ]
+                  closeKeyAriaLabel: 'esc',
+                },
+              },
+            },
+          },
+        },
       },
-    ],
+    },
+    nav,
+    sidebar,
     socialLinks: [
       { icon: 'telegram', link: 'https://t.me/exteraCraft' },
-      { icon: 'github', link: 'https://github.com/exteracraft' }
+      { icon: 'github', link: 'https://github.com/exteracraft' },
     ],
     outlineTitle: 'Оглавление',
     lastUpdatedText: 'Последнее обновление',
@@ -82,19 +68,18 @@ export default defineConfig({
     darkModeSwitchLabel: 'Тема',
     docFooter: {
       prev: 'Предыдущая страница',
-      next: 'Следующая страница'
-    }
+      next: 'Следующая страница',
+    },
   },
   head: [
-    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' }],
-    ['link', { rel: 'icon', href: 'cube.png' }]
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css',
+      },
+    ],
+    ['link', { rel: 'icon', href: 'cube.png' }],
   ],
-  vite: {
-    resolve: {
-      alias: {
-        '@components': '/docs/.vitepress/components'
-      }
-    }
-  },
-  cleanUrls: true
+  cleanUrls: true,
 });
